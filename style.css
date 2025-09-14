@@ -278,22 +278,76 @@ body {
   cursor: pointer;
 }
 
-/* Extra animations */
+/* 🔥 Extra Animations Library */
+
+/* 1. Smooth Floating */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
 }
+
+/* 2. Fade-in from Bottom */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0px); }
 }
+
+/* 3. Glow Text Effect */
 @keyframes glowText {
   from { text-shadow: 0 0 10px #fff, 0 0 20px #ffe600; }
   to { text-shadow: 0 0 20px #ff2e63, 0 0 30px #ffe600; }
 }
+
+/* 4. Bounce Effect */
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
+}
+
+/* 5. Continuous 360° Rotation (Flat Spin) */
+@keyframes rotate360 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 6. 3D Y-axis Rotation (like turning around) */
+@keyframes rotateY360 {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* 7. 3D X-axis Rotation (flipping vertically) */
+@keyframes rotateX360 {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(360deg); }
+}
+
+/* 8. Wobble (Shaking Left-Right) */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(2deg); }
+}
+
+/* 9. Pulse (Zoom In-Out Subtly) */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* 10. Flip (Y-axis quick flip) */
+@keyframes flip {
+  0% { transform: perspective(600px) rotateY(0deg); }
+  100% { transform: perspective(600px) rotateY(180deg); }
+}
+
+/* 11. 3D Tilt (Gentle rocking) */
+@keyframes tilt {
+  0%, 100% { transform: rotateY(0deg) rotateX(0deg); }
+  25% { transform: rotateY(5deg) rotateX(3deg); }
+  50% { transform: rotateY(-5deg) rotateX(-3deg); }
+  75% { transform: rotateY(3deg) rotateX(-2deg); }
 }
 
 
@@ -992,4 +1046,3 @@ footer {
   color: #fff;
   text-align: center;
 }
-
